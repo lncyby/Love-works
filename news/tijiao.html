@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>美化提交按钮</title>
+</head>
+<style media="screen">
+    .x {
+        width: 200px;
+        height: 60px;
+        border: 4px solid green;
+        border-radius: 30px 30px 30px 30px/10px 10px 10px 10px;
+        text-align: center;
+        line-height: 60px;
+        color: green;
+        font-size: 30px;
+        font-weight: bold;
+        margin: auto;
+        position: relative;
+    }
+
+    input {
+        opacity: 0;
+        font-size: 46px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+</style>
+
+<body>
+    <div class="x">上传附件
+        <input type="file" accept="./image/*">
+    </div>
+</body>
+
+</html>
