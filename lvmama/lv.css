@@ -1,0 +1,269 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.w {
+    width: 1000px;
+    margin: auto;
+}
+
+.head {
+    height: 60px;
+    border-bottom: 1px solid #333;
+    border-top: 1px solid white;
+    margin-top: 15px;
+    padding-bottom: 6px;
+}
+
+.head .left, .center {
+    float: left;
+}
+
+.head .left {
+    width: 175px;
+    height: 57px;
+    background: url("./image/lv_logo.png") no-repeat;
+    /*margin-bottom: 10px;*/
+}
+
+.head .center {
+    width: 99px;
+    height: 37px;
+    border-left: 1px solid #333;
+    text-align: center;
+    font-size: 22px;
+    line-height: 37px;
+    margin-top: 20px;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+.head .right {
+    width: 175px;
+    height: 49px;
+    background: url("./image/head_call_bg.gif") no-repeat;
+    float: right;
+    margin-top: 15px;
+    padding-top: 22px;
+    font-size: 20px;
+    color: #dd3388;
+}
+
+
+/*注册部分*/
+
+.body {
+    width: 1000px;
+    height: 470px;
+    /*background: red;*/
+    position: relative;
+}
+
+.body .left {
+    width: 710px;
+    height: 470px;
+    /*background: yellow;*/
+    padding-top: 60px;
+    padding-left: 60px;
+}
+
+.body .left ul li {
+    font-size: 12px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.body .left ul li input {
+    width: 250px;
+    height: 32px;
+    padding-left: 10px;
+}
+
+.body .left ul li:nth-child(2) input {
+    width: 144px;
+    height: 32px;
+    padding-left: 10px;
+}
+
+.body .left ul li:nth-child(2) img {
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+.body .left ul li:nth-child(3) input {
+    width: 140px;
+    height: 32px;
+    padding-left: 10px;
+}
+
+.body .left ul li:nth-child(3) a {
+    width: 100px;
+    height: 30px;
+    border: 1px solid gray;
+    display: inline-block;
+    line-height: 30px;
+    text-align: center;
+    margin-left: 4px;
+    color: gray;
+}
+
+.body .left ul li i {
+    color: red;
+}
+
+.body .left ul li span {
+    margin-right: 75px;
+    margin-top: 6px;
+    position: absolute;
+    top: 0px;
+    left: 358px;
+    display: none;
+}
+
+.body .left ul li span i {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    /*background: red;*/
+    background: url("./image/zhfs_suprise.jpg") -92px 0px;
+    margin-top: 4px;
+}
+
+.body .left ul li span p {
+    float: right;
+}
+
+.body .left>span {
+    font-size: 12px;
+}
+
+.body .left>span input {
+    margin-top: 20px;
+    margin-left: 90px;
+}
+
+.body .left>a {
+    display: inline-block;
+    width: 250px;
+    height: 42px;
+    text-align: center;
+    line-height: 42px;
+    color: white;
+    background: #e38;
+    margin-left: 90px;
+    margin-top: 20px;
+}
+
+.body .left>p {
+    font-size: 12px;
+    margin-left: 90px;
+    margin-top: 20px;
+}
+
+.body .right {
+    width: 260px;
+    height: 490px;
+    border-left: 1px dashed #333;
+    padding-left: 30px;
+    padding-right: 10px;
+    /*background: green;*/
+    position: absolute;
+    top: 40px;
+    right: 0px;
+}
+
+.body .right .top {
+    width: 260px;
+    height: 110px;
+    background: url("./image/regist_ad.jpg");
+}
+
+.body .right .bot {
+    width: 260px;
+    height: 370px;
+    background: url("./image/regist_ad1.jpg");
+    margin-top: 10px;
+}
+
+.bottom {
+    width: 1000px;
+    height: 70px;
+    border: 1px solid gray;
+    margin-top: 100px;
+}
+
+.bottom ul li {
+    width: 249px;
+    height: 50px;
+    font-size: 12px;
+    float: left;
+    border-left: 1px solid gray;
+    margin-top: 10px;
+}
+
+.bottom ul li:nth-child(1) {
+    width: 250px;
+    height: 50px;
+    font-size: 12px;
+    float: left;
+    border-left: 0px solid gray;
+    margin-top: 10px;
+}
+
+.bottom ul li i {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    background: url("./image/header_icon.png") -100px 0px;
+    margin-top: 4px;
+    margin-left: 14px;
+}
+
+.bottom ul li p {
+    font-size: 12px;
+    position: relative;
+    top: -32px;
+    left: 64px;
+}
+
+.bottom ul li p strong {
+    font-size: 14px;
+}
+
+.footer {
+    width: 1000px;
+    height: 106px;
+    border-top: 2px solid #dd1177;
+    margin-top: 10px;
+}
+
+.footer ul {
+    margin-top: 14px;
+    margin-left: 70px;
+}
+
+.footer ul li {
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    padding: 0 5px;
+    float: left;
+}
+
+.footer p {
+    font-size: 12px;
+    position: relative;
+    top: 0px;
+    left: 100px;
+}
