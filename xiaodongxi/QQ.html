@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>QQ旋转</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .box {
+            width: 100%;
+            height: 320px;
+        }
+
+        .big {
+            height: 220px;
+        }
+
+        ul {
+            margin-left: 500px;
+            padding-top: 40px;
+        }
+
+        ul li {
+            float: left;
+            margin-left: 20px;
+            transition: all 1s linear;
+        }
+
+        .big ul li:hover {
+            transform: scale(1.2, 1.2) rotate(360deg);
+        }
+
+        p {
+            width: 100%;
+            height: 30px;
+            background: gray;
+            text-align: center;
+        }
+
+        .small ul li:hover {
+            transform: scale(0.5, 0.5) rotate(360deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="big">
+            <p>旋转，放大</p>
+            <ul>
+                <li><img src="./img1/share1.png" alt=""></li>
+                <li><img src="./img1/share1.png" alt=""></li>
+                <li><img src="./img1/share1.png" alt=""></li>
+                <li><img src="./img1/share1.png" alt=""></li>
+                <li><img src="./img1/share1.png" alt=""></li>
+                <li><img src="./img1/share1.png" alt=""></li>
+            </ul>
+        </div>
+        <div class="small">
+            <p>旋转,缩小</p>
+            <ul>
+                <li><img src="./img1/share2.png" alt=""></li>
+                <li><img src="./img1/share2.png" alt=""></li>
+                <li><img src="./img1/share2.png" alt=""></li>
+                <li><img src="./img1/share2.png" alt=""></li>
+                <li><img src="./img1/share2.png" alt=""></li>
+                <li><img src="./img1/share2.png" alt=""></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

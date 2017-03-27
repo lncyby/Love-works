@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>宇宙</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: url("../bg.jpg");
+        }
+
+        .box {
+            width: 800px;
+            height: 800px;
+            /*border: 1px solid red;*/
+            margin: 20px auto;
+            position: relative;
+        }
+
+        .q,
+        .w,
+        .e,
+        .r,
+        .t,
+        .y,
+        .u {
+            float: left;
+            border-radius: 50%;
+            border: 2px solid white;
+            position: relative;
+        }
+
+        .qq,
+        .wq,
+        .eq,
+        .rq,
+        .tq,
+        .yq,
+        .uq {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+
+        .sun {
+            width: 80px;
+            height: 80px;
+            background: yellow;
+            float: left;
+            border-radius: 50%;
+            transform-style: preserve-3d;
+            position: absolute;
+            top: 360px;
+            left: 370px;
+        }
+
+        .q {
+            width: 160px;
+            height: 160px;
+            position: absolute;
+            top: 320px;
+            left: 330px;
+            transform-origin: center center;
+            animation: run 15s infinite linear;
+        }
+
+        .qq {
+            background: red;
+            position: absolute;
+            top: 16px;
+        }
+
+        .w {
+            width: 240px;
+            height: 240px;
+            position: absolute;
+            top: 280px;
+            left: 290px;
+            transform-origin: center center;
+            animation: run 10s infinite linear;
+        }
+
+        .wq {
+            background: yellow;
+            position: absolute;
+            top: 165px;
+        }
+
+        .e {
+            width: 320px;
+            height: 320px;
+            position: absolute;
+            top: 240px;
+            left: 250px;
+            transform-origin: center center;
+            animation: run 5s infinite linear;
+        }
+
+        .eq {
+            background: blue;
+            position: absolute;
+            top: 70px;
+            transform-origin: center center;
+            animation: run-s 5s infinite linear;
+        }
+
+        .eqd {
+            width: 10px;
+            height: 10px;
+            background: white;
+            border-radius: 50%;
+            position: relative;
+            top: -10px;
+        }
+
+        .r {
+            width: 400px;
+            height: 400px;
+            background: url("../universe.png") no-repeat;
+            background-size: cover;
+            position: absolute;
+            top: 200px;
+            left: 210px;
+            transform-origin: center center;
+            animation: run 10s infinite linear;
+        }
+
+        .rq {
+            background: green;
+            position: absolute;
+            top: 16px;
+            left: 74px;
+        }
+
+        .t {
+            width: 480px;
+            height: 480px;
+            position: absolute;
+            top: 160px;
+            left: 170px;
+            transform-origin: center center;
+            animation: run 20s infinite linear;
+        }
+
+        .tq {
+            background: purple;
+            position: absolute;
+            top: 430px;
+            left: 100px;
+        }
+
+        .y {
+            width: 560px;
+            height: 560px;
+            position: absolute;
+            top: 120px;
+            left: 130px;
+            transform-origin: center center;
+            animation: run 8s infinite linear;
+        }
+
+        .yq {
+            background: pink;
+            position: absolute;
+            top: 100px;
+            left: 490px;
+        }
+
+        .u {
+            width: 640px;
+            height: 640px;
+            position: absolute;
+            top: 80px;
+            left: 90px;
+            transform-origin: center center;
+            animation: run 3s infinite linear;
+        }
+
+        .uq {
+            background: gray;
+            position: absolute;
+            top: 16px;
+            left: 160px;
+        }
+
+        .uq2 {
+            width: 60px;
+            height: 30px;
+            border: 3px solid white;
+            border-radius: 50%;
+            position: absolute;
+            top: 12px;
+            left: 142px;
+        }
+
+        @keyframes run {
+            0% {
+                transform: rotateZ(0deg);
+            }
+            100% {
+                transform: rotateZ(360deg);
+            }
+        }
+
+        @keyframes run-s {
+            0% {
+                transform: rotateZ(0deg);
+            }
+            100% {
+                transform: rotateZ(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="sun"></div>
+        <div class="q">
+            <div class="qq"></div>
+        </div>
+        <div class="w">
+            <div class="wq"></div>
+        </div>
+        <div class="e">
+            <div class="eq">
+                <div class="eqd"></div>
+            </div>
+        </div>
+        <div class="r">
+            <div class="rq"></div>
+        </div>
+        <div class="t">
+            <div class="tq"></div>
+        </div>
+        <div class="y">
+            <div class="yq"></div>
+        </div>
+        <div class="u">
+            <div class="uq"></div>
+            <div class="uq2"></div>
+        </div>
+    </div>
+</body>
+
+</html>

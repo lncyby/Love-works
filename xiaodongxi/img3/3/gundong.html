@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>滚动图</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            float: left;
+        }
+
+        .box {
+            width: 882px;
+            height: 86px;
+            margin: 200px auto;
+            overflow: hidden;
+        }
+
+        .pic {
+            width: 1764px;
+            height: 86px;
+            animation: lun 3s infinite linear;
+        }
+
+        @keyframes lun {
+            0% {
+                transform: translateX(0px);
+            }
+            100% {
+                transform: translateX(-882px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="pic">
+            <img src="../1.jpg" alt="">
+            <img src="../2.jpg" alt="">
+            <img src="../3.jpg" alt="">
+            <img src="../4.jpg" alt="">
+            <img src="../5.jpg" alt="">
+            <img src="../6.jpg" alt="">
+            <img src="../7.jpg" alt="">
+            <img src="../1.jpg" alt="">
+            <img src="../2.jpg" alt="">
+            <img src="../3.jpg" alt="">
+            <img src="../4.jpg" alt="">
+            <img src="../5.jpg" alt="">
+            <img src="../6.jpg" alt="">
+            <img src="../7.jpg" alt="">
+        </div>
+    </div>
+</body>
+
+</html>

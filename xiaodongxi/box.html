@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>正方体</title>
+    <style media="screen">
+        body {
+            transform-style: preserve-3d;
+            perspective: 100px;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+            margin: 400px auto;
+            transform-origin: center center;
+            transform: rotateY(300deg);
+            transform: rotateZ(300deg);
+            transition: all 2s linear;
+            position: relative;
+        }
+
+        .o {
+            float: left;
+            width: 200px;
+            height: 200px;
+            opacity: 0.5;
+            font-size: 30px;
+            font-weight: 900;
+            text-align: center;
+            line-height: 200px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .box:hover {
+            transform: rotate3d(36, 36, 36, 10deg);
+        }
+
+        .before {
+            background: red;
+        }
+
+        .back {
+            /*width: 100px;*/
+            background: green;
+            /*transform: translate3d(200px, -200px, 0px);*/
+            transform: translate3d(100px, -100px, 0px);
+        }
+
+        .left {
+            /*height: 100px;*/
+            /*width: 100px;*/
+            background: pink;
+            transform-origin: left center;
+            transform: skew(180deg, 135deg);
+        }
+
+        .right {
+            /*width: 100px;*/
+            background: blue;
+            transform-origin: left center;
+            transform: skew(180deg, 135deg);
+            margin-left: 200px;
+        }
+
+        .top {
+            /*height: 100px;*/
+            background: purple;
+            transform-origin: bottom center;
+            transform: skew(-45deg);
+            margin-top: -200px;
+            /*margin-top: -100px;*/
+        }
+
+        .bottom {
+            /*height: 100px;*/
+            background: yellow;
+            transform-origin: bottom;
+            transform: skewX(-90deg);
+            margin-bottom: 200px;
+        }
+        /*.bottom {
+            height: 100px;
+            line-height: 100px;
+            transform-origin: bottom center;
+            margin-top: 100px;
+            transform: skewX(-45deg);
+        }*/
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="before o">前</div>
+        <div class="back o">后</div>
+        <div class="left o">左</div>
+        <div class="right o">右</div>
+        <div class="top o">上</div>
+        <div class="bottom o">下</div>
+    </div>
+</body>
+
+</html>

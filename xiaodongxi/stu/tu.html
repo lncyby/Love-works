@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>拼图</title>
+    <style media="screen">
+        /** {
+            margin: 0;
+            padding: 0;
+        }*/
+
+        div {
+            float: left;
+            margin-left: 100px;
+            margin-top: 100px;
+        }
+
+        .box {
+            width: 900px;
+            height: 2000px;
+        }
+
+        .one {
+            width: 100px;
+            height: 100px;
+            border: 2px solid red;
+            border-radius: 50%;
+        }
+
+        .two {
+            width: 100px;
+            height: 100px;
+            border: 2px solid red;
+            border-radius: 50px 50px 0 0;
+        }
+
+        .three {
+            width: 100px;
+            height: 50px;
+            border: 2px solid red;
+            border-radius: 50px 50px 0 0;
+        }
+
+        .four {
+            width: 100px;
+            height: 100px;
+            border: 2px solid red;
+            border-top-left-radius: 50px;
+        }
+
+        .five {
+            width: 100px;
+            height: 100px;
+            border: 2px solid red;
+            border-radius: 100px 0 0 0;
+        }
+
+        .six {
+            width: 100px;
+            height: 50px;
+            border: 2px solid red;
+            border-radius: 50%;
+        }
+
+        .seven {
+            width: 50px;
+            height: 100px;
+            border: 2px solid red;
+            border-radius: 50%;
+        }
+
+        .eight {
+            width: 100px;
+            height: 25px;
+            border: 2px solid red;
+            border-radius: 50px 50px 0px 0px/25px 25px 0 0;
+        }
+
+        .o {
+            width: 10px;
+            height: 10px;
+            border: 40px solid red;
+            border-radius: 50%;
+        }
+
+        .t {
+            width: 10px;
+            height: 10px;
+            border: 40px solid red;
+            border-radius: 20%;
+        }
+
+        .q {
+            width: 10px;
+            height: 10px;
+            border: 40px solid red;
+            border-radius: 50% 0 50% 0;
+        }
+
+        .p {
+            border-top: 50px solid red;
+            border-left: 50px solid blue;
+            border-right: 50px solid green;
+            border-bottom: 50px solid yellow;
+        }
+
+        .w {
+            border-top: 50px solid red;
+            border-left: 50px solid blue;
+            border-right: 50px solid white;
+            border-bottom: 50px solid yellow;
+        }
+
+        .e {
+            border-top: 50px solid red;
+            border-left: 50px solid red;
+            border-right: 50px solid rgba(0, 0, 0, 0);
+            border-bottom: 50px solid red;
+            border-radius: 50%;
+        }
+
+        .r {
+            width: 100px;
+            border-top: 50px solid red;
+            border-bottom: 50px solid green;
+            border-radius: 50%;
+        }
+
+        .y {
+            width: 100px;
+            height: 50px;
+            background: red;
+            border-radius: 5px;
+            position: relative;
+        }
+
+        .y-1 {
+            border-top: 5px solid white;
+            border-left: 5px solid white;
+            border-right: 5px solid red;
+            border-bottom: 5px solid white;
+            position: absolute;
+            top: -90px;
+            left: -110px;
+        }
+
+        .x-box {
+            position: relative;
+        }
+
+        .u {
+            width: 100px;
+            border-top: 50px solid red;
+            border-bottom: 50px solid green;
+            border-radius: 50%;
+        }
+
+        .u-1,
+        .u-2 {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        .u-1 {
+            background: red;
+            position: absolute;
+            top: 20px;
+            left: 50px;
+        }
+
+        .u-2 {
+            background: green;
+            position: absolute;
+            top: 25px;
+            left: 0px;
+        }
+
+        .u-1-2,
+        .u-2-2 {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+
+        .u-1-2 {
+            background: green;
+            position: relative;
+            top: -75px;
+            left: -80px;
+        }
+
+        .u-2-2 {
+            background: red;
+            position: relative;
+            top: -85px;
+            left: -80px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+        <div class="four"></div>
+        <div class="five"></div>
+        <div class="six"></div>
+        <div class="seven"></div>
+        <div class="eight"></div>
+        <div class="o"></div>
+        <div class="t"></div>
+        <div class="q"></div>
+        <div class="p"></div>
+        <div class="w"></div>
+        <div class="e"></div>
+        <div class="r"></div>
+        <div class="y">
+            <div class="y-1"></div>
+        </div>
+        <div class="x-box">
+            <div class="u"></div>
+            <div class="u-1">
+                <div class="u-1-2"></div>
+            </div>
+            <div class="u-2">
+                <div class="u-2-2"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

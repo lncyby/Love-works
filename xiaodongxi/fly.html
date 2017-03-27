@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>火箭升空了</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 1000px;
+            height: 900px;
+            background: lightgreen;
+            position: relative;
+        }
+
+        .box {
+            width: 101px;
+            height: 190px;
+            transform-origin: center center;
+            transform: rotate(45deg);
+            position: absolute;
+            bottom: -190px;
+            left: -101px;
+            transition: all 2s linear;
+        }
+
+        body:hover .box {
+            transform: rotate(45deg) translate(200px, -1400px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <img src="./img1/rocket.png" alt="">
+    </div>
+</body>
+
+</html>

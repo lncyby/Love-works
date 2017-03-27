@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>时钟</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .click-k {
+            width: 600px;
+            height: 600px;
+            border: 20px solid black;
+            border-radius: 50%;
+            margin: 100px auto;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .time .t {
+            width: 10px;
+            height: 600px;
+            float: left;
+            background: black;
+            position: absolute;
+            top: 0px;
+            left: 295px;
+            transform-origin: center center;
+        }
+
+        .time .t1 {
+            width: 16px;
+            background: black;
+            position: absolute;
+            top: 0px;
+            left: 292px;
+        }
+
+        .time .t2 {
+            width: 16px;
+            background: black;
+            position: absolute;
+            top: 0px;
+            left: 292px;
+            transform: rotateZ(90deg);
+        }
+
+        .time .t3 {
+            transform: rotateZ(30deg);
+        }
+
+        .time .t4 {
+            transform: rotateZ(60deg);
+        }
+
+        .time .t5 {
+            transform: rotateZ(-30deg);
+        }
+
+        .time .t6 {
+            transform: rotateZ(-60deg);
+        }
+
+        .cen {
+            width: 520px;
+            height: 520px;
+            background: white;
+            border-radius: 50%;
+            position: absolute;
+            top: 40px;
+            left: 40px;
+        }
+
+        .hour,
+        .min,
+        .sec {
+            float: left;
+        }
+
+        .hour {
+            width: 16px;
+            height: 210px;
+            background: black;
+            position: relative;
+            top: 42px;
+            left: 252px;
+            transform-origin: bottom center;
+            animation: run 43200s infinite;
+        }
+
+        .min {
+            width: 10px;
+            height: 220px;
+            background: black;
+            position: relative;
+            top: 32px;
+            left: 239px;
+            transform-origin: bottom center;
+            animation: run 3600s infinite;
+        }
+
+        .sec {
+            width: 10px;
+            height: 240px;
+            background: red;
+            position: relative;
+            top: 12px;
+            left: 229px;
+            transform-origin: bottom center;
+            animation: run 60s infinite steps(60);
+        }
+
+        .d {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: black;
+            position: relative;
+            top: 240px;
+            left: 248px;
+        }
+
+        @keyframes run {
+            0% {
+                transform: rotateZ(0deg);
+            }
+            100% {
+                transform: rotateZ(360deg);
+            }
+        }
+        /*
+        @keyframes min {
+            0% {
+                transform: rotateZ(0deg);
+            }
+            100% {
+                transform: rotateZ(360deg);
+            }
+        }
+
+        @keyframes sec {
+            0% {
+                transform: rotateZ(0deg);
+            }
+            100% {
+                transform: rotateZ(360deg);
+            }
+        }*/
+    </style>
+</head>
+
+<body>
+    <div class="click-k">
+        <div class="time">
+            <div class="t1 t"></div>
+            <div class="t2 t"></div>
+            <div class="t3 t"></div>
+            <div class="t4 t"></div>
+            <div class="t5 t"></div>
+            <div class="t6 t"></div>
+        </div>
+        <div class="cen">
+            <div class="hour"></div>
+            <div class="min"></div>
+            <div class="sec"></div>
+            <div class="d"></div>
+        </div>
+    </div>
+</body>
+
+</html>

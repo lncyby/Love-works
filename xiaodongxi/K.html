@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>红桃K</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .k {
+            width: 310px;
+            height: 438px;
+            margin: 400px auto;
+            position: relative;
+        }
+
+        img {
+            float: left;
+            transform-origin: 0px 0px;
+            transition: 2s;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+
+        .k:hover img:nth-child(1) {
+            transform: rotate(60deg);
+        }
+
+        .k:hover img:nth-child(2) {
+            transform: rotate(120deg);
+        }
+
+        .k:hover img:nth-child(3) {
+            transform: rotate(180deg);
+        }
+
+        .k:hover img:nth-child(4) {
+            transform: rotate(240deg);
+        }
+
+        .k:hover img:nth-child(5) {
+            transform: rotate(300deg);
+        }
+
+        .k:hover img:nth-child(6) {
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="k">
+        <img src="./img1/pk1.png" alt="">
+        <img src="./img1/pk1.png" alt="">
+        <img src="./img1/pk1.png" alt="">
+        <img src="./img1/pk1.png" alt="">
+        <img src="./img1/pk1.png" alt="">
+        <img src="./img1/pk1.png" alt="">
+    </div>
+</body>
+
+</html>

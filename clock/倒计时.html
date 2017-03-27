@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: blue;
+        }
+
+        .time {
+            background: purple;
+            margin-top: 200px;
+        }
+
+        #last {
+            font-size: 100px;
+            color: white;
+            padding-left: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="time"> <span id="last"></span></div>
+    </div>
+    <script>
+        var last = document.getElementById("last")
+
+        function flag(arg) {
+            return arg > 9 ? arg : "0" + arg;
+        }
+
+        function FreshTime() {
+            var endtime = new Date("2017/05/01,12:00:00"); //结束时间
+            var nowtime = new Date(); //当前时间
+            //getTime距离1970.1.1 的秒数  //总的时间差，秒为单位
+            var lefttime = parseInt((endtime.getTime() - nowtime.getTime()) / 1000);
+            //利用秒获得对应的时间
+            d = parseInt(lefttime / 3600 / 24);
+            h = parseInt((lefttime / 3600) % 24);
+            m = parseInt((lefttime / 60) % 60);
+            s = parseInt(lefttime % 60);
+
+            last.innerHTML = "距离抢购时间还剩" + flag(d) + "天" + flag(h) + "小时" + flag(m) + "分" + flag(s) + "秒";
+            if (lefttime <= 0) {
+                last.innerHTML = "团购已结束";
+                clearInterval(sh);
+            }
+        }
+        FreshTime();
+        var sh = setInterval(FreshTime, 1000);
+        // var sh;
+        // sh = setInterval(FreshTime, 1000);
+    </script>
+</body>
+
+</html>

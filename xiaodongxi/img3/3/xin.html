@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>心动</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: pink;
+        }
+
+        .box {
+            width: 400px;
+            height: 400px;
+            margin: 60px auto;
+            position: relative;
+            animation: run 2s infinite;
+        }
+
+        .left,
+        .right {
+            width: 200px;
+            height: 200px;
+            border: 1px solid pink;
+            border-radius: 50%;
+            box-shadow: 4px 4px 80px white;
+            float: left;
+        }
+
+        .right {
+            margin-left: -64px;
+        }
+
+        .bot {
+            width: 200px;
+            height: 200px;
+            box-shadow: 4px 4px 80px white;
+            transform: rotateZ(45deg);
+            position: absolute;
+            top: 70px;
+            left: 70px;
+        }
+
+        @keyframes run {
+            0% {
+                transform: scale(0.5, 0.5);
+            }
+            50% {
+                transform: scale(1, 1);
+            }
+            100% {
+                transform: scale(0.5, 0.5);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="left"></div>
+        <div class="right"></div>
+        <div class="bot"></div>
+    </div>
+</body>
+
+</html>

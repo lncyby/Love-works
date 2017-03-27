@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>3D</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 300px;
+            height: 100%;
+            margin: 0 auto;
+        }
+
+        .o {
+            margin-top: 60px;
+        }
+
+        .x,
+        .y {
+            width: 300px;
+            height: 226px;
+            transition: all 2s linear;
+        }
+
+        .x:hover {
+            transform: rotateX(180deg);
+        }
+
+        .y:hover {
+            transform: rotateY(180deg);
+        }
+
+        .z {
+            width: 330px;
+            height: 227px;
+            padding-top: 40px;
+            transform-origin: center center;
+            transition: all 2s linear;
+        }
+
+        .z:hover {
+            transform: rotateZ(180deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="x o">
+            <img src="./img2/x.jpg" alt="">
+        </div>
+        <div class="y o">
+            <img src="./img2/y.jpg" alt="">
+        </div>
+        <div class="z o">
+            <img src="./img2/z.jpg" alt="">
+        </div>
+    </div>
+</body>
+
+</html>

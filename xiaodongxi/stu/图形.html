@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>图形</title>
+    <style media="screen">
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .box {
+            width: 1100px;
+            height: 1000px;
+            margin: 20px auto;
+        }
+
+        .dd {
+            width: 240px;
+            height: 240px;
+            border: 1px solid gray;
+            display: inline-block;
+            margin-left: 30px;
+            margin-top: 30px;
+            box-shadow: 0px 0px 2px blue;
+        }
+
+        .dd1 {
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+            margin: 20px auto;
+        }
+
+        .d1 {
+            border-radius: 100px;
+        }
+
+        .d2 {
+            border-radius: 100px 100px 0px 0px;
+        }
+
+        .d3 {
+            height: 100px;
+            border-radius: 100px 100px 0px 0px;
+            margin-top: 50px;
+        }
+
+        .d4 {
+            border-radius: 75px 0px 0px 0px;
+        }
+
+        .d5 {
+            width: 100px;
+            height: 100px;
+            border-radius: 100px 0px 0px 0px;
+            margin-top: 60px;
+        }
+
+        .d6 {
+            height: 100px;
+            border-radius: 100px/50px;
+            margin-top: 50px;
+        }
+
+        .d7 {
+            width: 100px;
+            border-radius: 50px/100px;
+        }
+
+        .d8 {
+            height: 50px;
+            border-radius: 100px 100px 0px 0px/50px 50px 0px 0px;
+            margin-top: 70px;
+        }
+
+        .d18 {
+            background: red;
+            border-radius: 100px;
+        }
+
+        .nei {
+            width: 40px;
+            height: 40px;
+            margin: auto;
+            margin-top: 83px;
+            background: #fff;
+        }
+
+        .nei18 {
+            border-radius: 20px;
+        }
+
+        .d9 {
+            border-radius: 40px;
+            background: red;
+        }
+
+        .d10 {
+            background: red;
+            border-radius: 100px 0px;
+        }
+
+        .nei10 {
+            border-radius: 20px 0px;
+        }
+
+        .d11 {
+            width: 0px;
+            height: 0px;
+            border-top: 100px solid red;
+            border-right: 100px solid blue;
+            border-left: 100px solid green;
+            border-bottom: 100px solid yellow;
+        }
+
+        .d12 {
+            width: 0px;
+            height: 0px;
+            border-top: 100px solid red;
+            border-right: 100px solid white;
+            border-left: 100px solid green;
+            border-bottom: 100px solid yellow;
+        }
+
+        .d13 {
+            width: 0px;
+            height: 0px;
+            border-right: 100px solid transparent;
+            border-top: 100px solid red;
+            border-left: 100px solid red;
+            border-bottom: 100px solid red;
+            border-radius: 50%;
+        }
+
+        .d14 {
+            height: 0px;
+            width: 200px;
+            border-top: 100px solid red;
+            border-bottom: 100px solid green;
+            /*border-radius: 100px 100px 0px 0px;*/
+            border-radius: 50%;
+        }
+
+        .d16:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            background: red;
+            border: 18px solid green;
+            border-radius: 100%;
+            width: 12px;
+            height: 12px;
+        }
+
+        .d16:after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            background: green;
+            border: 18px solid red;
+            border-radius: 100%;
+            width: 12px;
+            height: 12px;
+        }
+
+        .d17 {
+            width: 180px;
+            height: 80px;
+            background: red;
+            border-radius: 10px;
+            margin-top: 60px;
+        }
+
+        .jian {
+            width: 0px;
+            height: 0px;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-right: 10px solid red;
+            position: relative;
+            top: 12px;
+            left: -10px;
+        }
+
+        .d15 {
+            height: 0px;
+            border-top: 100px solid red;
+            border-bottom: 100px solid green;
+            border-radius: 100px;
+        }
+
+        .yuan1 {
+            width: 20px;
+            height: 20px;
+            background: green;
+            border: 40px solid red;
+            border-radius: 50%;
+            margin-top: -25%;
+        }
+
+        .yuan2 {
+            width: 20px;
+            height: 20px;
+            background: red;
+            border: 40px solid green;
+            border-radius: 50px;
+            margin-top: -50%;
+            margin-left: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="dd">
+            <div class="dd1 d1"></div>
+        </div>
+        <div class="dd">
+            <div class="dd1 d2"></div>
+        </div>
+        <div class="dd">
+            <div class="dd1 d3"></div>
+        </div>
+        <div class="dd">
+            <div class="dd1 d4"></div>
+        </div>
+        <div class="dd">
+            <div class="dd1 d5"></div>
+        </div>
+        <div class="dd">
+            <div class="dd1 d6"></div>
+        </div>
+        <div class="dd">
+            <div class="dd1 d7"></div>
+        </div>
+        <div class="dd">
+            <div class="dd1 d8"></div>
+        </div>
+        <div class="dd">
+            <div class="dd1 d18">
+                <div class="nei18 nei"></div>
+            </div>
+        </div>
+        <div class="dd">
+            <div class="dd1 d9">
+
+            </div>
+        </div>
+        <div class="dd">
+            <div class="dd1 d10">
+                <div class="nei10 nei"></div>
+            </div>
+        </div>
+        <div class="dd">
+            <div class="dd1 d11"></div>
+        </div>
+        <div class="dd">
+            <div class="dd1 d12"></div>
+        </div>
+        <div class="dd">
+            <div class="dd1 d13"></div>
+        </div>
+        <div class="dd">
+            <div class="dd1 d14"></div>
+            <div class="d19"></div>
+        </div>
+        <div class="dd">
+            <div class="dd1 d15">
+                <div class="yuan1">
+
+                </div>
+                <div class="yuan2">
+
+                </div>
+            </div>
+        </div>
+        <div class="dd">
+            <div class="dd1 d17">
+                <div class="jian">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
